@@ -4,12 +4,12 @@ import { ArrowUpRight, Mail, MapPin, MoveUp, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const navigation = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/home" },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/skills" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const technologies = ["Next.js", "React", "TypeScript", "Tailwind CSS"];
@@ -19,23 +19,15 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden bg-slate-950 text-white">
-      {/* ==================================================
-          BACKGROUND EFFECTS
-      ================================================== */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        {/* Top gradient */}
         <div className="absolute left-1/2 top-0 h-px w-full -translate-x-1/2 bg-linear-to-r from-transparent via-purple-400/70 to-transparent" />
 
-        {/* Purple glow */}
         <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-purple-600/10 blur-3xl" />
 
-        {/* Blue glow */}
         <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
 
-        {/* Center glow */}
         <div className="absolute left-1/2 top-1/3 h-80 w-80 -translate-x-1/2 rounded-full bg-violet-500/5 blur-3xl" />
 
-        {/* Grid */}
         <div
           className="absolute inset-0 opacity-[0.035]"
           style={{
@@ -47,12 +39,8 @@ export default function Footer() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ==================================================
-            TOP CTA
-        ================================================== */}
         <div className="border-b border-white/10 py-16 sm:py-20">
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/4 p-7 backdrop-blur-sm sm:p-10 lg:p-12">
-            {/* CTA glow */}
             <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-purple-500/10 blur-3xl" />
 
             <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
@@ -76,7 +64,7 @@ export default function Footer() {
               </div>
 
               <Link
-                href="#contact"
+                href="/contact"
                 className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 shadow-xl shadow-purple-950/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-50"
               >
                 Start a Conversation
@@ -86,22 +74,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ==================================================
-            MAIN FOOTER
-        ================================================== */}
         <div className="grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
-          {/* ==================================================
-              BRAND
-          ================================================== */}
           <div>
-            <Link href="#home" className="group inline-flex items-center gap-3">
+            <Link href="/home" className="group inline-flex items-center gap-3">
               <div className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-violet-500 to-blue-500 text-sm font-bold shadow-lg shadow-purple-900/30">
                 N
-                <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-purple-300 ring-4 ring-slate-950" />
+                <Sparkles className="absolute -right-1 -top-1 h-3.5 w-3.5  rounded-full bg-purple-400 ring-4 ring-slate-950" />
               </div>
 
               <div>
-                <p className="text-base font-bold text-white">Nafiseh</p>
+                <p className="text-base font-bold text-white">Nafisa</p>
 
                 <p className="text-[11px] text-slate-500">Frontend Developer</p>
               </div>
@@ -112,18 +94,16 @@ export default function Footer() {
               user-friendly web experiences with React, Next.js, and TypeScript.
             </p>
 
-            {/* Location */}
             <div className="mt-6 flex items-center gap-2 text-sm text-slate-500">
               <MapPin className="h-4 w-4 text-purple-400" />
               Herat, Afghanistan
             </div>
 
-            {/* Socials */}
             <div className="mt-6 flex gap-2.5 ">
               <Link
-                href="#"
+                href="https://github.com/Nafisa-Amiri1"
                 aria-label="GitHub"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white text-slate-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
+                className="flex h-8 w-8  items-center justify-center rounded-xl border border-white/10 bg-white text-slate-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,9 +121,9 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/nafisa-amiri"
                 aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/3 text-slate-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-xl border border-white/10 bg-white/3 text-slate-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,18 +143,15 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="mailto:hello@example.com"
+                href="mailto:nafisaamiri107@gmail.com"
                 aria-label="Email"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/40 text-white-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
+                className="flex h-8 w-8  items-center justify-center rounded-xl border border-white/10 bg-white/40 text-white-400 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 hover:text-white"
               >
                 <Mail className="h-6 w-6" />
               </Link>
             </div>
           </div>
 
-          {/* ==================================================
-              NAVIGATION
-          ================================================== */}
           <div>
             <h3 className="text-sm font-semibold text-white">Navigation</h3>
 
@@ -194,9 +171,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ==================================================
-              TECHNOLOGIES
-          ================================================== */}
           <div>
             <h3 className="text-sm font-semibold text-white">Technologies</h3>
 
@@ -213,9 +187,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ==================================================
-              CONTACT
-          ================================================== */}
           <div>
             <h3 className="text-sm font-semibold text-white">
               Let&apos;s Connect
@@ -225,15 +196,14 @@ export default function Footer() {
               Have an opportunity or just want to say hello?
             </p>
 
-            <a
-              href="mailto:hello@example.com"
+            <Link
+              href="mailto:nafisaamiri107@gmail.com"
               className="group mt-4 inline-flex items-center gap-2 text-sm font-medium text-purple-300 transition-colors hover:text-purple-200"
             >
-              hello@example.com
+              nafisaamiri107@gmail.com
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-            </a>
+            </Link>
 
-            {/* Availability */}
             <div className="mt-6 flex items-center gap-2.5">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-50" />
@@ -247,38 +217,34 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ==================================================
-            BOTTOM BAR
-        ================================================== */}
         <div className="border-t border-white/10 py-6">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-slate-500">
-              © {currentYear} Nafiseh. All rights reserved.
+              © {currentYear} Nafisa. All rights reserved.
             </p>
 
             <div className="flex items-center gap-5">
               <Link
-                href="#"
+                href="https://drive.google.com/file/d/11WVCu5JvOw1QfVbvicOzLJlGbe9_kJfL/view?usp=drive_link"
                 className="text-xs text-slate-500 transition-colors hover:text-white"
               >
-                Privacy
+                CV
               </Link>
 
               <Link
-                href="#"
+                href="https://github.com/Nafisa-Amiri1"
                 className="text-xs text-slate-500 transition-colors hover:text-white"
               >
-                Terms
+                GitHub
               </Link>
 
-              {/* Back to top */}
-              <a
-                href="#home"
+              <button
                 aria-label="Back to top"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="group flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/3 text-slate-400 transition-all hover:border-purple-400/30 hover:bg-purple-500/10 hover:text-purple-300"
               >
                 <MoveUp className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
