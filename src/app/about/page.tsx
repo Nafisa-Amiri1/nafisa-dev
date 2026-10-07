@@ -165,7 +165,6 @@ export default function About() {
               />
             </div>
 
-            {/* Small handwritten-style message */}
             <div className="absolute bottom-[3%] left-[4%] max-w-37.5 -rotate-6 text-purple-500">
               <p className="font-serif text-sm italic leading-6">
                 Let&apos;s build
@@ -178,18 +177,12 @@ export default function About() {
               <ArrowRight className="ml-auto mt-1 h-5 w-5 rotate-45" />
             </div>
           </div>
-
-          {/* ==================================================
-              RIGHT - CONTENT
-          ================================================== */}
           <div className="relative">
-            {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-100 bg-purple-50/80 px-4 py-2 text-sm font-medium text-purple-600">
               <UserRound className="h-4 w-4" />
               ABOUT ME
             </div>
 
-            {/* Heading */}
             <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl">
               Hi, I’m{" "}
               <span className="bg-linear-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent">
@@ -204,7 +197,6 @@ export default function About() {
               and lifelong learner.
             </h3>
 
-            {/* Description */}
             <div className="mt-7 space-y-5 text-base leading-7 text-slate-600">
               <p>
                 I’m a frontend developer who enjoys turning creative ideas into
@@ -219,9 +211,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* ==================================================
-                STATS
-            ================================================== */}
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {stats.map((stat) => {
                 const Icon = stat.icon;
@@ -245,9 +234,6 @@ export default function About() {
               })}
             </div>
 
-            {/* ==================================================
-                BUTTONS
-            ================================================== */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/projects"
@@ -265,9 +251,6 @@ export default function About() {
               </Link>
             </div>
 
-            {/* ==================================================
-                INTERESTS
-            ================================================== */}
             <div className="mt-9">
               <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-500">
                 Interests
