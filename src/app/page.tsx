@@ -1,9 +1,9 @@
-export default function Home() {
+import Home from "./home/page";
+
+export default function Page() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-300">
-      <div className="text-2xl font-bold bg-linear-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
-        Hello, World!
-      </div>
+    <div >
+      <Home />
     </div>
   );
 }
